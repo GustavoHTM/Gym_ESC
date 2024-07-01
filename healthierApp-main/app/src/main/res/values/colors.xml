@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkest_gray">#555</color>
+    <color name="primary">#0DAC72</color>
+    <color name="primary_dark">#00A86B</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="gray">#808080</color>
+    <color name="background">#282844</color>
+    <color name="lightGrayHint">#D3D3D3</color>
+    <color name="navBarBackground">#121212</color>
+</resources>

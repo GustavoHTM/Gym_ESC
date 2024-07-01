@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_workout"
+        android:icon="@drawable/baseline_content_paste_search_24"
+        android:title="Treinos" />
+    <item
+        android:id="@+id/nav_diet"
+        android:icon="@drawable/baseline_sports_gymnastics_24"
+        android:title="Exercícios" />
+    <item
+        android:id="@+id/nav_management"
+        android:icon="@drawable/baseline_manage_accounts_24"
+        android:title="Conta" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:title="Sair" />
+</menu>

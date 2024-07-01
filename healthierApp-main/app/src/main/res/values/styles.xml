@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Seu tema existente -->
+
+    <!-- Estilo para o Navigation Drawer -->
+    <style name="NavigationDrawerStyle" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemIconTint">@color/primary_dark</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="backgroundTint">@color/primary</item>
+    </style>
+</resources>
