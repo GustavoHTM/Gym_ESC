@@ -3,7 +3,6 @@
     <style name="Base.Theme.GymESC" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <item name="android:colorBackground">@color/background</item>
-        <item name="android:navigationBarColor">@color/navBarBackground</item>
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
     </style>

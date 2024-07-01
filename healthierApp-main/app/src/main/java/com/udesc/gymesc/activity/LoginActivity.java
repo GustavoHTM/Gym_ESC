@@ -2,6 +2,7 @@ package com.udesc.gymesc.activity;
 
 import static com.udesc.gymesc.singleton.Helper.USER_LOGGED;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -10,6 +11,8 @@ import android.text.InputType;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -55,7 +58,10 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         validateAlreadyLogged();
-        loginButton.setOnClickListener(v -> performLogin());
+        loginButton.setOnClickListener(v -> {
+            hideSoftKeyboard(v);
+            performLogin();
+        });
         registryButton.setOnClickListener(v -> redirectToRegistration());
         passwordToggleIcon.setOnClickListener(v -> togglePasswordVisibility());
 
@@ -133,6 +139,13 @@ public class LoginActivity extends AppCompatActivity {
         }
         isPasswordVisible = !isPasswordVisible;
         passwordEditText.setSelection(passwordEditText.length());
+    }
+
+    private void hideSoftKeyboard(View view) {
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        if (imm != null) {
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
     }
 
     private void validateAlreadyLogged() {
