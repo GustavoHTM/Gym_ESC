@@ -1,2 +1,2 @@
-## Healthier
-Healthier is an app that provides a complete workout and diet plan, based on your request.
+## GymESC
+GymESC is an app that provides a complete train and exercises plan, based on your request.

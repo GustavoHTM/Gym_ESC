@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.udesc.healthier"
+    namespace = "com.udesc.gymesc"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.udesc.healthier"
+        applicationId = "com.udesc.gymesc"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
